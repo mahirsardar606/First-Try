@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding:0; 
+	font-family: arial;
+	color: black;
+}
+
+.team-section{
+	height: 100vh;
+	display: flex;
+}
+
+.person-man{
+	position: relative;
+	flex: 0.6;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+.person-man:hover{
+	flex: 1.2;
+}
+
+.person-img{
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	filter: grayscale(80%);
+	transition: 0.3s;
+}
+
+.person-man:hover .person-img{
+filter: grayscale(0);
+}
+
+.person-info{
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.person-man:hover .person-info{
+	opacity: 1;
+	bottom: 40px;
+	transition-delay: .4s;
+}
+
+.person-info h2{
+	font-size: 25px;
+	color: #d63447;
+	text-shadow: 0px -2px 1px black;
+}
+
+.person-info p{
+	font-size: 15px;
+	color: #f4f4f4;
+	text-shadow: 0px -2px 1px black;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+.social-links i{
+	font-size: 15px;
+	color: black;
+	padding: 10px;
+	background: #71D7A7;
+	border-radius: 50%;
+	transition: 0.3s linear;
+}
+
+
+.social-links i:hover{
+	background: transparent;
+	transform: scale(1.5);
+	color: #d8345f;
+}
